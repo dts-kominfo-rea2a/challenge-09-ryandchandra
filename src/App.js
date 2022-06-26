@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <Contact contacts={contacts}/>
+      {contacts.map((contact) => <Contact data={contact} />)}
     </div>
   );
 }
